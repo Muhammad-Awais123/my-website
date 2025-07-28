@@ -93,57 +93,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* Email Form Messages
-------------------------------*/
-.error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.sent-message {
-  display: none;
-  color: white;
-  background: #00ff88;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -1409,3 +1358,45 @@ section,
 --------------------------------------------------------------*/
 /* .starter-section {
   /* Add your styles here */
+#contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 14px 40px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+
+  background: linear-gradient(90deg, #ff4b2b, #ff416c);
+  border: none;
+
+  box-shadow: 0 4px 12px rgba(255, 65, 108, 0.4);
+  transition: all 0.4s ease;
+}
+
+.email-button i {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.email-button:hover {
+    background: linear-gradient(90deg, #ff416c ,  #ff4b2b); /* 🔥 Hover पर color change */
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.5);
+  color: white;
+  transform: translateY(-3px) scale(1.03);
+}
+
+.email-button:hover i {
+  transform: translateX(5px);
+}
+
