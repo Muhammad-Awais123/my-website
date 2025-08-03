@@ -1368,18 +1368,16 @@ section,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-
+  gap: 20px;
   padding: 14px 40px;
   font-size: 17px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-
   background: linear-gradient(90deg, #ff4b2b, #ff416c);
   border: none;
-
+  margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(255, 65, 108, 0.4);
   transition: all 0.4s ease;
 }
@@ -1390,7 +1388,7 @@ section,
 }
 
 .email-button:hover {
-    background: linear-gradient(90deg, #ff416c ,  #ff4b2b); /* 🔥 Hover पर color change */
+    background: linear-gradient(90deg, #ff416c ,  #ff4b2b); 
   box-shadow: 0 8px 20px rgba(0, 114, 255, 0.5);
   color: white;
   transform: translateY(-3px) scale(1.03);
@@ -1398,5 +1396,32 @@ section,
 
 .email-button:hover i {
   transform: translateX(5px);
+}
+.social-links{
+  display: flex;
+  align-items: center;
+}
+.custom-social-icons a {
+  display: inline-block;
+  margin: 8px;
+  font-size: 26px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  color: white !important;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-social-icons a.whatsapp { background: #25D366; }
+.custom-social-icons a.facebook { background: #1877F2; }
+.custom-social-icons a.instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); }
+.custom-social-icons a.github { background: #24292e; }
+.custom-social-icons a.linkedin { background: #0077b5; }
+
+.custom-social-icons a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 

@@ -114,104 +114,130 @@
 
   </header>
 
-  <main class="main">
-    <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
-          </ol>
-        </nav>
+<main class="main">
+  <!-- Page Title -->
+  <div class="page-title dark-background">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+      <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li class="current">Portfolio Details</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container project-section">
+    <div class="text-center mb-4">
+      <h2 id="project-title">Loading...</h2>
+      <p class="text-muted" id="project-category"></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 text-center mb-4">
+        <img id="project-image" src="" alt="Project Image" class="project-img" />
+      </div>
+
+      <div class="col-md-6 project-info">
+        <p><strong>Client:</strong> <span id="project-client"></span></p>
+        <p><strong>Project date:</strong> <span id="project-date"></span></p>
+        <p><strong>Project URL:</strong> <a id="project-url" href="#" target="_blank"></a></p>
+        <p><strong>Technologies:</strong> <span id="project-tech"></span></p>
+        <p><strong>Description:</strong> <span id="project-description"></span></p>
+        <p><strong>GitHub Repo:</strong> <a id="project-github" href="#" target="_blank">View Code</a></p>
+        <p><strong>LinkedIn Post:</strong> <a id="project-linkedin" href="#" target="_blank">View Post</a></p>
+
+        <div style="margin-top: 20px; display: grid; gap: 8px;">
+          <p>✅ Fully Responsive Design – Works on all devices.</p>
+          <p>✅ Smooth Navigation – Sticky header, animated scroll.</p>
+          <p>✅ Pricing Section – Clear, well-structured plans.</p>
+          <p>✅ Trainer Profiles – Introduces professional trainers.</p>
+          <p>✅ Gallery Section – Clean grid layout for showcase.</p>
+          <p>✅ Contact Form – Ready for backend integration.</p>
+          <p>✅ Modern UI/UX – Built with TailwindCSS & Bootstrap.</p>
+        </div>
       </div>
     </div>
-    <div class="container project-section">
-      <div class="text-center mb-4">
-        <h2 id="project-title">Loading...</h2>
-        <p class="text-muted" id="project-category"></p>
-      </div>
-      <div class="row">
-        <div class="col-md-6 text-center mb-4">
-          <img id="project-image" src="" alt="Project Image" class="project-img" />
-        </div>
-        <div class="col-md-6 project-info">
-          <p><strong>Client:</strong> <span id="project-client"></span></p>
-          <p><strong>Project date:</strong> <span id="project-date"></span></p>
-          <p><strong>Project URL:</strong> <a id="project-url" href="#" target="_blank"></a></p>
-          <p><strong>Technologies:</strong> <span id="project-tech"></span></p>
-          <p id="project-description"><strong>Description:</strong> </p>
-          <div class="" style="margin-top: 20px; display: grid; grid-column: auto; ">
-            <p> ✅ Fully Responsive Design – Looks great on all devices (desktop, tablet, mobile).
-            </p>
+  </div>
 
-            <p>✅ Smooth Navigation – Sticky header, animated scroll, and intuitive section transitions.</p>
-
-            <p>✅ Pricing Section – Clear, well-structured membership plans.</p>
-
-            <p>✅ Trainer Profiles – Introduces professional trainers with images and bios.</p>
-
-            <p>✅ Gallery Section – Clean grid-based layout for showcasing gym facilities.</p>
-
-            <p>✅ Contact Form – Integrated and styled contact form ready for backend connection.</p>
-            <p>✅ Modern UI/UX – Built with TailwindCSS and Bootstrap for maximum visual impact and fast development.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section id="contact-form">
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me directly via email:</p>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=awaisch1130@gmail.com" class="email-button"
-          target="_blank">
-          <i class="fa-solid fa-envelope"></i> Email Me
-        </a>
-      </section>
+  <section id="contact-form">
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me directly via email:</p>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=awaisch1130@gmail.com" class="email-button" target="_blank">
+        <i class="fa-solid fa-envelope"></i> Email Me
+      </a>
     </section>
-  </main>
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const projectName = urlParams.get("project");
+  </section>
+</main>
 
-    const projects = {
-      gymify: {
-        title: "Gymify",
-        category: "Responsive Web app",
-        client: "Gym Trainer Company",
-        date: "20 june, 2025",
-        url: "https://muhammad-awais123.github.io/Gymify-Web/",
-        description: `Gymify is a modern and fully responsive gym website designed with a clean, attractive layout. It features multiple user-focused sections such as Pricing Plans, Professional Trainers, Gallery, Contact Form, and more. Developed using the latest web technologies, Gymify ensures cross-device compatibility, fast performance, and a seamless user experience — perfect for fitness businesses and personal trainers looking to build a professional online presence.`,
-        image: "assets/img/portfolio/Gymify-Desktop.png",
-        technologies: ["HTML5", "CSS3", "JavaScript", "TailwindCSS", "Bootstrap 5"]
-      }
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const projectName = urlParams.get("project");
 
-      // Add more projects here if needed
-    };
+const projects = {
+  gymify: {
+    title: "Gymify",
+    category: "Responsive Web app",
+    client: "Gym Trainer Company",
+    date: "20 June, 2025",
+    url: "https://muhammad-awais123.github.io/Gymify-Web/",
+    description: "Gymify is a modern and fully responsive gym website designed with a clean, attractive layout. It features multiple user-focused sections such as Pricing Plans, Professional Trainers, Gallery, Contact Form, and more. Developed using the latest web technologies, Gymify ensures cross-device compatibility, fast performance, and a seamless user experience — perfect for fitness businesses and personal trainers looking to build a professional online presence.",
+    image: "assets/img/portfolio/Gymify-Desktop.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "TailwindCSS", "Bootstrap 5"],
+    github: "https://github.com/Muhammad-Awais123/Gymify-Web",
+    linkedin: "https://www.linkedin.com/posts/muhammad-awais-4a5739374_html-css-tailwindcss-activity-7351700255614074881--cU9"
+  },
+  image_gallery: {
+    title: "Image Gallery",
+    category: "Responsive Web app",
+    client: "CodeAlpha Internship",
+    date: "28 July, 2025",
+    url: "https://muhammad-awais123.github.io/CodeAlpha_ImageGallery/",
+    description: "This project is a modern and responsive image gallery built using HTML, CSS, and JavaScript as part of the CodeAlpha internship task. The gallery features category-based filtering (All, Nature, Animals, Cities) and a lightbox view with next/previous navigation for an enhanced user experience. It is fully responsive across all screen sizes .",
+    image: "assets/img/portfolio/image-gallery.png",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/Muhammad-Awais123/CodeAlpha_ImageGallery",
+    linkedin: "https://www.linkedin.com/posts/muhammad-awais-4a5739374_codealpha-webdevelopment-javascript-activity-7356949760508932098-W2D1"
+  },
+   music_player: {
+    title: "Image Gallery",
+    category: "Responsive Web app",
+    client: "CodeAlpha Internship",
+    date: "1 Aug , 2025",
+    url: "https://muhammad-awais123.github.io/CodeAlpha_MusicPlayer/",
+    description: "A responsive and interactive Music Player built with HTML, CSS, and JavaScript as part of the CodeAlpha Internship Program (Aug 2025).",
+    image: "assets/img/portfolio/Music-player.png",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/Muhammad-Awais123/CodeAlpha_MusicPlayer",
+    linkedin: "https://www.linkedin.com/posts/muhammad-awais-4a5739374_codealpha-webdevelopment-javascript-activity-7356952092080508928-RebV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFyoRn0B-AOkHWNfbvr5kU9pL5DRupFVrQI"
+  }
+};
 
-    if (projects[projectName]) {
-      const project = projects[projectName];
-      document.getElementById("project-title").textContent = project.title;
-      document.getElementById("project-category").textContent = project.category;
-      document.getElementById("project-client").textContent = project.client;
-      document.getElementById("project-date").textContent = project.date;
-      document.getElementById("project-url").textContent = project.url;
-      document.getElementById("project-url").href = project.url;
-      document.getElementById("project-description").textContent = project.description;
+if (projects[projectName]) {
+  const p = projects[projectName];
+  document.getElementById("project-title").textContent = p.title;
+  document.getElementById("project-category").textContent = p.category;
+  document.getElementById("project-client").textContent = p.client;
+  document.getElementById("project-date").textContent = p.date;
+  document.getElementById("project-url").textContent = p.url;
+  document.getElementById("project-url").href = p.url;
+  document.getElementById("project-description").textContent = p.description;
+  document.getElementById("project-github").href = p.github;
+  document.getElementById("project-linkedin").href = p.linkedin;
 
-      // Display tech badges
-      const techContainer = document.getElementById("project-tech");
-      techContainer.innerHTML = project.technologies.map(tech => `
-        <span class="badge bg-primary me-1">${tech}</span>
-      `).join('');
+  // ✅ Display technologies as badges
+  const techContainer = document.getElementById("project-tech");
+  techContainer.innerHTML = p.technologies.map(tech => `<span class="badge bg-primary me-1">${tech}</span>`).join("");
 
-      // Image
-      document.getElementById("project-image").src = project.image;
-    } else {
-      document.querySelector(".container").innerHTML = "<h3 class='text-center text-danger'>Project not found</h3>";
-    }
-  </script>
+  // ✅ Set image
+  document.getElementById("project-image").src = p.image;
+} else {
+  document.querySelector(".container").innerHTML = "<h3 class='text-center text-danger'>Project not found</h3>";
+}
+</script>
+
 
 
 
