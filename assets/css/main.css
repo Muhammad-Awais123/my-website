@@ -717,6 +717,44 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+.resume-btn {
+  position: fixed;
+  top: 45%;
+  right: 0; 
+  transform: translateY(-50%) rotate(180deg);
+  background-color: #ff6600;
+  color: white;
+  gap: 2px;
+  padding: 12px 8px; 
+  border-radius: 29px 0px 30px 0px; 
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+  font-family: sans-serif;
+  writing-mode: vertical-rl; 
+}
+
+.resume-btn:hover {
+  background-color: white;
+  color: #e05500;
+  transform: translateY(-50%) rotate(180deg) scale(1.05);
+}
+
+.view-btn {
+  top: 60%;
+  transition: all 0.4s ease;
+  background-color: #007bff;
+}
+
+.view-btn:hover {
+  color: #0056b3;
+  background-color: white;
+}
+
+
+
+
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
@@ -1388,7 +1426,7 @@ section,
 }
 
 .email-button:hover {
-    background: linear-gradient(90deg, #ff416c ,  #ff4b2b); 
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
   box-shadow: 0 8px 20px rgba(0, 114, 255, 0.5);
   color: white;
   transform: translateY(-3px) scale(1.03);
@@ -1397,10 +1435,12 @@ section,
 .email-button:hover i {
   transform: translateX(5px);
 }
-.social-links{
+
+.social-links {
   display: flex;
   align-items: center;
 }
+
 .custom-social-icons a {
   display: inline-block;
   margin: 8px;
@@ -1414,14 +1454,27 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.custom-social-icons a.whatsapp { background: #25D366; }
-.custom-social-icons a.facebook { background: #1877F2; }
-.custom-social-icons a.instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); }
-.custom-social-icons a.github { background: #24292e; }
-.custom-social-icons a.linkedin { background: #0077b5; }
+.custom-social-icons a.whatsapp {
+  background: #25D366;
+}
+
+.custom-social-icons a.facebook {
+  background: #1877F2;
+}
+
+.custom-social-icons a.instagram {
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
+}
+
+.custom-social-icons a.github {
+  background: #24292e;
+}
+
+.custom-social-icons a.linkedin {
+  background: #0077b5;
+}
 
 .custom-social-icons a:hover {
   transform: translateY(-5px) scale(1.1);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
-
